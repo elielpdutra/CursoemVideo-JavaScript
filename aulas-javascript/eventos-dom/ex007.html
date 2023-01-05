@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Somando números</title>
+
+    <style>
+        body{
+            font: normal 20pt arial;
+            background-color: gray;
+            margin-left: 20px;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 4px black;
+            
+        }
+
+        input {
+            font: normal 17pt arial;
+            width: 200px;
+            height: 35px;
+            border: 1px solid;
+            list-style-type: none;
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        button{
+            font-size: 21px;
+            color: white;
+            background-color: blue;
+            padding: 6px;
+            width: 80px;
+            height: 37px;
+            border: 1px solid;
+        }
+
+        div{
+            color: rgb(5, 255, 5);
+            margin-top: 20px;
+            text-shadow: 1px 1px 4px black;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <button value="Somar" onclick="somar()">Somar</button>
+    <div id="res">Resultado..</div>
+
+    <script>
+
+        function somar() {
+            let tn1 = document.getElementById('txtn1')
+            let tn2 = document.getElementById('txtn2')
+            let resultado = document.getElementById('res')
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let soma = n1 + n2
+            resultado.innerHTML = `A soma entre o número ${n1} e número ${n2} é igual a: ${soma}.`
+         
+        }
+
+    </script>
+</body>
+</html>
