@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medindo a velocidade</title>
+</head>
+<body>
+    
+    <h1>Medindo velocidade</h1>
+    <input type="number" name="txtvel" id="textvel" placeholder="Digite a velocidade">
+    <button value="Medir" onclick="verificar()">Verificar</button>
+    <div id="txtresul">...</div>
+
+    <script>
+
+        function verificar() {
+            var txtVel = document.getElementById('textvel')
+            var vel = Number(txtVel.value)
+            var resul = document.getElementById('txtresul')
+
+            resul.innerHTML = `<p>Sua velocidade é de ${vel} km/h, <strong>Dirija sempre com um cinto de segurança.</strong></p>`
+        
+            if (vel > 60) {
+                resul.innerHTML = `<p>Sua velocidade é de ${vel} km/h, <strong>Você está acima da velocidade. MULTADO!</strong></p>`
+
+            } 
+
+            
+        }
+        
+
+    </script>
+
+</body>
+</html>
