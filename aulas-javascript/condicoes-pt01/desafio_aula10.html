@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio aula 10</title>
+</head>
+<body>
+    
+    <h1>Você é brasileiro ou estrangeiro?</h1>
+    <h2>Diga o seu país</h2>
+    <input type="text" name="txtpais" id="txtpais" placeholder="Digite o seu país.."> 
+    <button onclick="nacionalidade()">OK</button>
+    <div id="resultado">...</div>
+
+    <script>
+        
+        function nacionalidade() {
+
+            let textpais = document.getElementById('txtpais').value
+            let resultado = document.getElementById('resultado')
+
+            if (textpais == 'Brasil' || textpais == 'brasil' || textpais == 'br' || textpais == 'BR') {
+                resultado.innerHTML = `Você mora no ${textpais}, sua nacionalidade é: brasileiro.`
+            } else {
+                resultado.innerHTML = `Você mora no(a) ${textpais}, você é estrangeiro.`
+            }
+            
+
+        }
+
+    </script>
+
+</body>
+</html>
