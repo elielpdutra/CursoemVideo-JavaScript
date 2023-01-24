@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(19, 101, 136);
+    font: normal 17pt arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 4px 5px 10px rgb(0 0 0 / 70%);
+}
+
+section {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: 22px auto;
+    box-shadow: 8px 8px 13px rgb(0 0 0 / 43%);
+    border-radius: 5%;
+}
+
+section>div {
+    padding: 2px;
+    margin: 20px;
+}
+
+section>div>p{
+    padding: 5px;
+}
+
+section>div>p>input[type=number] {
+    font-size: 19px;
+    width:80px;
+    height: 25px;
+    padding: 15px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-file-upload-button {
+    appearance: none;
+    margin: 0;
+   
+}
+
+label {
+   font-size: 24px;
+   cursor: pointer;
+   padding: 2px;
+
+}
+
+.btn {
+    background-color: rgb(50, 76, 206);
+    color: white;
+    font: normal 14pt arial;
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid rgb(0, 225, 255);
+    border-radius: 40px;
+}
+
+#res {
+    text-align: center;
+    padding: 10px;
+}
+
+#foto {
+    margin-top: 20px;
+    margin-bottom: -15px;
+    filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.739));
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
